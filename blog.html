@@ -1,0 +1,39 @@
+<!-- Declares this document as an HTML5 page. -->
+<!DOCTYPE html>
+<!-- Sets the document language for browsers and assistive technology. -->
+<html lang="en">
+
+<head>
+    <!-- Uses UTF-8 so the page can display the full character set. -->
+    <meta charset="UTF-8" />
+    <!-- Keeps the layout sized correctly on mobile and desktop screens. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sets the title shown in the browser tab and search results. -->
+    <title>Blog | 24 Dimensions</title>
+
+    <!-- Loads shared site-wide colors, typography, and base element styles. -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <!-- Loads shared page layout rules. -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <!-- Loads reusable component styles, including the shared header and footer. -->
+    <link rel="stylesheet" href="assets/css/components.css">
+    <!-- Loads Font Awesome icons used by shared site components. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Sets the browser tab icon. -->
+    <link rel="icon" href="assets/images/Favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- components.js inserts the shared site header into this placeholder. -->
+    <div data-component="header"></div>
+
+    <!-- components.js inserts the shared site footer into this placeholder. -->
+    <div data-component="footer"></div>
+
+    <!-- Loads the component-injection logic for the shared header and footer. -->
+    <script src="assets/js/components.js"></script>
+    <!-- Loads shared page behavior used across the site. -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

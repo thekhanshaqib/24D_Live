@@ -1,0 +1,309 @@
+body{
+  background-color: #f1f0eb!important;
+}
+/* ===============================
+   ABOUT OVERVIEW SECTION
+================================ */
+/* =====================================
+   HAPPY CUSTOMERS FULL BANNER
+===================================== */
+
+.happy-customers-overview-full {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Consistent full banner feel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("/assets/images/banners/Culture_and_Community.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CONTENT BOX */
+.happy-customers-content-box {
+    max-width: 900px;
+    width: 100%;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.happy-customers-content-box h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.happy-customers-content-box p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* =====================================
+   MOBILE VERSION
+===================================== */
+
+@media (max-width: 991px) {
+
+    .happy-customers-overview-full {
+        height:55vh; /* Do NOT use min-height:auto */
+        
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url("/assets/images/banners/culture_and_community_m.webp");
+
+        background-position: center;
+    }
+
+    .happy-customers-content-box {
+        padding:0 20px; /* Remove 10rem hack */
+        margin-top: 50px;
+    }
+
+    .happy-customers-content-box h2 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem);
+    }
+
+    .happy-customers-content-box p {
+        font-size: 1rem;
+    }
+}
+
+/* ================= HAPPY CUSTOMER VIDEOS ================= */
+
+.happy-customer-videos {
+  padding: 4rem 5%;
+  overflow: hidden;
+}
+
+/* Header */
+.happy-customer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.happy-customer-text h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+}
+
+.happy-customer-text p {
+  max-width: 720px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.happy-customer-nav {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.happy-customer-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Slider */
+.happy-customer-slider-wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.happy-customer-slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.happy-customer-slider {
+  display: flex;
+  gap: 2rem;
+  scroll-snap-type: x mandatory;
+}
+
+/* Card */
+.happy-customer-video-card {
+  min-width: 360px;
+  height: 420px;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #000;
+  scroll-snap-align: start;
+}
+
+/* Video */
+.happy-customer-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play Overlay */
+.happy-customer-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  color: #faf7f7;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .happy-customer-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .happy-customer-video-card {
+    min-width: 260px;
+    height: 360px;
+  }
+}
+
+
+.happy-customer-testimonials {
+  padding: 80px 20px;
+
+}
+
+.happy-customer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.happy-customer-title {
+   font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  line-height: 1.1;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.happy-customer-filters {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.happy-customer-filter {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.happy-customer-filter.active {
+  background: #c40000;
+  color: #fff;
+  border-color: #c40000;
+}
+
+.happy-customer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.happy-customer-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: transform .3s ease;
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  column-gap: 16px;
+  align-items: center;
+}
+
+.happy-customer-card:hover {
+  transform: translateY(-6px);
+}
+
+.happy-customer-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+.happy-customer-tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.happy-customer-card h4 {
+  font-size: 18px;
+  margin: 0;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.happy-customer-role,
+.happy-customer-project {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.happy-customer-role {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.happy-customer-quote {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  grid-column: 1 / -1;
+  margin: 24px 0 0;
+}
+@media (max-width: 768px) {
+  .happy-customer-title {
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+  .happy-customer-card {
+    padding: 24px;
+  }
+
+}

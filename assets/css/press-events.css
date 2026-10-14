@@ -1,0 +1,667 @@
+body{
+  background-color: #f1f0eb;
+}
+/* ===============================
+   ABOUT OVERVIEW SECTION
+================================ */
+/* =====================================
+   PRESS & EVENTS FULL BANNER
+===================================== */
+
+.press-events-overview-full {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Consistent full hero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("/assets/images/banners/Events_Initiatives.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CONTENT */
+.press-events-content-box {
+    max-width: 900px;
+    width: 100%;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.press-events-content-box h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.press-events-content-box p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* =====================================
+   MOBILE VERSION
+===================================== */
+
+@media (max-width: 991px) {
+
+    .press-events-overview-full {
+        height: 55vh; /* Keep structure */
+        
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url("/assets/images/banners/events_m.webp"); /* create mobile version */
+
+        background-position: center;
+    }
+
+    .press-events-content-box {
+        padding: 0 20px;
+        margin-top: 50px; /* Add spacing for mobile */  
+    }
+
+    .press-events-content-box h2 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem);
+    }
+
+    .press-events-content-box p {
+        font-size: 1rem;
+    }
+}
+
+/* Press & Events Section */
+.press-events-section {
+
+  padding: 4rem 0;
+}
+
+/* Container */
+.press-events-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.section-title {
+  font-family: var(--font-heading);
+   font-size: clamp(1.2rem, 3vw, 3.5rem);
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+/* Grid Layout */
+.press-events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Image Card */
+.press-events-item {
+  overflow: hidden;
+}
+
+.press-events-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Hover Effect */
+.press-events-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .press-events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .press-events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* ================= PRESS MARQUEE ================= */
+.d24d-press-marquee {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Dark Overlay */
+.d24d-press-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* Track */
+.d24d-press-track {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Logos Wrapper */
+.d24d-press-logos {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  animation: pressScroll 30s linear infinite;
+}
+
+/* Logos */
+.d24d-press-logos img {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.d24d-press-logos img:hover {
+  opacity: 1;
+}
+
+/* Animation */
+@keyframes pressScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .d24d-press-marquee {
+    height: 160px;
+  }
+
+  .d24d-press-logos img {
+    height: 32px;
+  }
+}
+
+
+/* ============================
+   D24D PREMIUM MODAL
+============================ */
+
+/* Base modal wrapper */
+.d24d-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+
+.d24d-modal.active {
+  display: block;
+}
+
+/* Overlay */
+.d24d-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal container */
+.d24d-modal-content {
+  position: relative;
+  max-width: 640px;
+  width: calc(100% - 40px);
+  margin: auto;
+  background: #ffffff;
+  padding: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 14px;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.15),
+    0 8px 16px rgba(0,0,0,0.08);
+}
+
+/* Title */
+.d24d-modal-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 0.8rem;
+}
+
+/* Divider */
+.d24d-modal-divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.15)
+  );
+  margin: 1rem 0 1.2rem;
+}
+
+/* Summary */
+#d24dModalSummary {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Key points */
+.d24d-modal-content ul {
+  margin-top: 1.6rem;
+  padding-left: 1.2rem;
+}
+
+.d24d-modal-content ul li {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 0.6rem;
+}
+
+/* Close button */
+.d24d-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #222;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.d24d-modal-close:hover {
+  opacity: 0.6;
+}
+
+/* ============================
+   MOBILE RESPONSIVE
+============================ */
+
+@media (max-width: 768px) {
+
+  .d24d-modal-content {
+    top: 5rem;
+    bottom: 10rem;
+    transform: none;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    max-height: 85vh;
+    border-radius: 18px;
+    padding: 1.8rem 1.5rem 2rem;
+  }
+
+  .d24d-modal-content h2 {
+    font-size: 1.25rem;
+  }
+
+  #d24dModalSummary {
+    font-size: 0.9rem;
+  }
+
+  .d24d-modal-divider {
+    width: 100%;
+    margin: 0.8rem 0 1rem;
+  }
+
+  .d24d-modal-close {
+    top: 14px;
+    right: 14px;
+    font-size: 26px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .d24d-modal-content {
+    padding: 1.6rem 1.25rem 1.8rem;
+  }
+}
+
+
+/* ================= D24D EVENTS ================= */
+.d24d-events-block {
+  padding: 4rem 0;  
+}
+
+
+.d24d-events-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.d24d-events-title {
+   font-family: var(--font-heading);
+   font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+.d24d-event-date {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  padding: 0.5rem 0.7rem;
+  text-transform: uppercase;
+}
+
+
+
+/* Grid */
+.d24d-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Card */
+.d24d-event-card {
+  background-color: #ffffff;
+  border: 1px solid #e6e2db;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image */
+.d24d-event-image {
+  overflow: hidden;
+  position: relative;
+  height: 420px;
+}
+
+.d24d-event-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* modern, clean */
+}
+
+/* Iframe fills container */
+.d24d-event-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .d24d-event-video {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.d24d-event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Hover Zoom */
+.d24d-event-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Content */
+.d24d-event-content {
+  padding: 1.8rem;
+}
+
+.d24d-event-content h3 {
+   font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.d24d-event-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.d24d-event-content ul {
+  padding-left: 1.2rem;
+}
+
+.d24d-event-content ul li {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+  color: #444;
+}
+
+.d24d-event-readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 1.4rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.d24d-event-readmore span {
+  transition: transform 0.3s ease;
+}
+
+.d24d-event-readmore:hover {
+  border-color: #000;
+}
+
+.d24d-event-readmore:hover span {
+  transform: translateX(4px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .d24d-events-title {
+    font-size: 1.8rem;
+  text-align: left;
+  }
+  .d24d-events-block {
+  padding: 2rem 0;  
+}
+}
+
+@media (max-width: 768px) {
+  .d24d-event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+  }
+}
+
+/* Make entire image clickable */
+.d24d-video-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Play Button */
+.d24d-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 70px;
+  height: 70px;
+
+  color: #fff;
+  font-size: 3.2rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  pointer-events: none; /* So entire card remains clickable */
+}
+
+/* Smooth Hover Effect */
+.d24d-has-video:hover .d24d-play-btn {
+  
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Optional subtle overlay */
+.d24d-has-video::after {
+  pointer-events: none;
+}
+
+.d24d-has-video:hover::after {
+  background: rgba(0,0,0,0.25);
+}
+
+/* ================= D24D SLIDER STYLES ================= */
+
+.d24d-events-wrapper {
+  position: relative; /* for top-right controls */
+}
+
+.d24d-slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.d24d-slider-controls {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .d24d-slider-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .d24d-slider-controls {
+    position: static;
+    /* justify-content: center; */
+    /* margin-top: 1.2rem; */
+  }
+}
+
+.d24d-slider-controls button { 
+width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.d24d-slider-controls button:hover {
+  transform: translateY(-2px);
+}
+
+.d24d-slider {
+  margin-top: 1.4rem;
+  overflow: hidden;
+}
+
+.d24d-slider-track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  align-items: stretch;
+}
+
+.d24d-slider-track::-webkit-scrollbar { display: none; }
+.d24d-slider-track { -ms-overflow-style: none; scrollbar-width: none; }
+
+.d24d-event-card {
+  scroll-snap-align: start;
+  /* show three cards per viewport on larger screens */
+  flex: 0 0 calc((100% - (1.25rem * 2)) / 3);
+  min-width: 220px;
+}
+
+
+@media (max-width: 992px) {
+  /* show two cards on medium screens */
+  .d24d-event-card { flex: 0 0 calc((100% - 1.25rem) / 2); min-width: 260px; }
+}
+
+@media (max-width: 600px) {
+  /* show one card on small screens */
+  .d24d-event-card { flex: 0 0 90%; min-width: 85%; }
+  .d24d-slider-controls { top: 4px; }
+  .d24d-events-title { text-align: left; }
+}
+
+/* Make sure cards keep their internal layout */
+.d24d-event-card .d24d-event-image { height: 320px; }
+

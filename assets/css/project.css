@@ -1,0 +1,172 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f1f0eb;
+  color: #111;
+}
+
+/* ================= INTRO ================= */
+.project-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 8rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.project-intro h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.project-intro p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ================= FILTERS ================= */
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+ border: none;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  color: #101010;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #d71920;
+  color: #fff;
+  border-color: #d71920;
+}
+
+/* ================= GRID ================= */
+.project-grid {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 1.5rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+/* ================= CARD ================= */
+.project-card {
+  border: 1px solid #eee;
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+/* Tag overlay (right side of the image) */
+.project-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(215,25,32,0.95);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  z-index: 5;
+}
+
+.project-content {
+  padding: 1.8rem;
+}
+
+.project-content h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 1vw, 3.5rem);
+  line-height: 1.1;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+/* Meta */
+.project-meta {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.project-meta i {
+  color: #d71920;
+  margin-right: 0.3rem;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+.btn-outline {
+  align-self: flex-start;
+  padding: 0.6rem 1.6rem;
+  border: 1px solid #d71920;
+  color: #d71920;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #d71920;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .project-grid{
+  grid-template-columns: 1fr;}
+}
+
+.project-intro {
+  text-align: left;
+
+}
+
+/* ================= HIDE ================= */
+.project-card.hide {
+  display: none;
+}
+

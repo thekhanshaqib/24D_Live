@@ -1,0 +1,566 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+/* ===============================
+   ABOUT OVERVIEW SECTION
+================================ */
+.about-overview-full {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Full banner height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    /* Desktop Background */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("/assets/images/banners/who_are_we.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-content-box {
+    max-width: 900px;
+    width: 100%;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.about-content-box h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.about-content-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* ============================= */
+/* MOBILE VERSION */
+/* ============================= */
+
+@media (max-width: 991px) {
+    .about-overview-full {
+        height: 55vh; /* Smaller but still full feel */
+        
+        /* Mobile Image */
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url("/assets/images/banners/who_we_are_m.webp");
+
+        background-position: center;
+    }
+
+    .about-content-box h2 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem);
+    }
+
+    .about-content-box p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* About Us Hero Section */
+.about-hero {
+    width: 100%;
+    padding: 4rem 5%;
+    background: var(--white);
+    
+
+}
+
+/* Row 1 - Text Content */
+.about-hero-content {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.about-hero-content h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.0rem, 1vw, 1.0rem);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.about-hero-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: center;
+
+}
+
+/* Row 2 - Images */
+.about-hero-images {
+    display: flex;
+    gap: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-hero-images {
+        flex-direction: column;
+    }
+    .about-hero-content h2 {
+    font-size: 1.8rem;
+    text-align: left;
+  
+
+}
+
+.about-hero-content p {
+  
+    text-align: left;
+
+}
+}
+
+
+
+
+
+/* ===============================
+   What We Do SECTION ================= */
+
+   .about-us-what-we-do {
+  padding: 50px 20px;
+  background: var(--white);
+}
+
+.about-us-what-we-do-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: left;
+}
+
+.about-us-what-we-do-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.about-us-what-we-do-intro {
+  max-width: 1200px;
+  margin: 0 auto 24px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #222;
+}
+
+.about-us-what-we-do-divider {
+  width: 100%;
+  height: 1px;
+  background: #e5e0d8;
+  margin: 20px 0;
+}
+
+.about-us-what-we-do-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.about-us-what-we-do-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 1.2vw, 2.6rem);
+  font-weight: 500;
+ 
+}
+
+.about-us-what-we-do-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 620px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-us-what-we-do-title {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .about-us-what-we-do{
+    padding: 1rem;
+  }
+
+
+  .about-us-what-we-do-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-us-what-we-do-heading {
+    font-size: 20px;
+  }
+
+  .about-us-what-we-do-intro {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+
+/* Our Story Section */
+.our-story {
+  width: 100%;
+  padding: 5rem 5%;
+   background: var(--white);
+  background-image: image("https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=960/https://media-production.lp-cdn.com/media/lyo09c2qxghspxgzhaz0");
+}
+
+/* Section Header */
+.our-story-header {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.our-story-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-family: var(--font-heading);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.our-story-header h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+/* Content Wrapper */
+.our-story-wrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Left Column */
+.our-story-content {
+  flex: 1.2;
+  padding: 0;
+ 
+}
+
+.our-story-image {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.our-story-image img {
+  width: 100%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+}
+
+.our-story-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+ 
+ 
+}
+
+.story-highlight {
+  font-weight: 500;
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+}
+
+.our-story-content ul {
+  padding-left: 3.2rem;
+}
+
+.our-story-content li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+
+/* Right Column */
+.our-story-insights {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Insight Cards */
+.insight-card {
+  padding: 1.8rem;
+  border: 1px solid #eee;
+  /* border-radius: 0.75rem; */
+  background-color: #fff;
+}
+
+.insight-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  color: #010101;
+}
+
+.insight-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .our-story-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .our-story-header{
+    text-align: left;
+  }
+}
+
+/* Our Vision Section */
+/* Our Vision Framework Section */
+.our-vision-framework {
+  width: 100%;
+  padding: 5rem 5%;
+  background: var(--white);
+}
+
+/* Vision Header */
+.vision-framework-header {
+  max-width: 900px;
+  margin: 0 auto 4.5rem;
+  text-align: center;
+}
+
+.vision-framework-header h2 {
+    font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.vision-framework-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Beliefs Heading */
+.vision-framework-beliefs h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+  color: #222;
+}
+
+/* Belief Grid */
+.belief-framework-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+}
+
+/* Individual Belief Item */
+.belief-framework-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+/* Large Number */
+.belief-number {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0000007a;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Belief Content */
+.belief-content h4 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+  
+}
+
+.belief-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .belief-framework-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .our-vision-framework {
+
+  padding: 2rem;
+  
+}
+
+  .belief-number {
+    font-size: 2.6rem;
+  }
+
+  .vision-framework-header {
+  
+  text-align: left;
+}
+}
+
+/* Leadership Team Section */
+.leadership-team {
+  width: 100%;
+  padding: 5rem 5%;
+ background: var(--white);
+}
+
+/* Header */
+.leadership-header {
+  max-width: 850px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.leadership-header h2 {
+    font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.leadership-header p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Grid */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Leader Card */
+.leader-card {
+  text-align: center;
+}
+
+/* Role Badge */
+.leader-role {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.75rem;
+  color: #333;
+  border: 1px solid #eee;
+  border-radius: 2rem;
+  background-color: #fafafa;
+}
+
+/* Image */
+.leader-image {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
+}
+
+.leader-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+/* Name */
+.leader-card h4 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  color: #111;
+  
+}
+
+/* Bio */
+.leader-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .leadership-team {
+
+  padding: 2rem;
+
+}
+  .leadership-header {
+  
+  text-align: left;
+}
+}

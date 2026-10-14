@@ -1,0 +1,33 @@
+<!-- ================= UNIVERSAL ENQUIRY MODAL ================= -->
+<div class="luxury-modal" id="luxuryModal">
+  <div class="luxury-modal-overlay" id="luxuryModalOverlay"></div>
+  <div class="luxury-modal-content">
+    <button class="luxury-modal-close" id="luxuryModalClose">&times;</button>
+    <h3>Enquire Now</h3>
+    <p>Share your details and our team will get in touch.</p>
+    <form class="luxury-form" id="modalEnquiryForm">
+      <div class="luxury-form-group">
+        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+      </div>
+      <div class="luxury-form-group">
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+      </div>
+      <div class="luxury-form-group">
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+      </div>
+      <!-- Property Type Dropdown -->
+      <div class="luxury-form-group">
+        <select name="propertyType" id="propertyType" required>
+          <option value="" disabled selected>Select Property Type</option>
+          <option value="Residential">Residential</option>
+          <option value="Commercial">Commercial</option>
+          <option value="Plots">Plots</option>
+        </select>
+      </div>
+      <button type="submit" class="luxury-form-btn">
+        Submit Enquiry
+      </button>
+      <div class="form-message" id="formMessage" style="display:none; margin-top:10px; padding:10px; border-radius:4px;"></div>
+    </form>
+  </div>
+</div>

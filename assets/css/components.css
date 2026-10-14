@@ -1,0 +1,187 @@
+/* ================= BUTTONS ================= */
+.btn {
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.btn-outline {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-filled {
+  background: var(--primary-color);
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-filled:hover {
+  background: transparent;
+  color: var(--primary-color);
+}
+
+/* ================= ANIMATIONS ================= */
+.animate {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* ================= LUXURY MODAL ================= */
+
+.luxury-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 2000;
+}
+
+.luxury-modal.show {
+  display: block;
+}
+
+/* Overlay */
+.luxury-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+/* Modal Box */
+.luxury-modal-content {
+  position: relative;
+  max-width: 420px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%) scale(0.95);
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+  animation: modalFadeIn 0.4s ease forwards;
+}
+
+@keyframes modalFadeIn {
+  to {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+/* Close */
+.luxury-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Heading */
+.luxury-modal-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.luxury-modal-content p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+.luxury-form-group {
+  margin-bottom: 1rem;
+}
+
+.luxury-form-group input,
+.luxury-form-group select {
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.85rem;
+  background: #fff;
+  color: #000;
+  font-family: inherit;
+}
+
+/* Focus state */
+.luxury-form-group input:focus,
+.luxury-form-group select:focus {
+  outline: none;
+  border-color: #111;
+}
+
+/* Dropdown arrow consistency */
+.luxury-form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23666' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 0.7rem;
+  cursor: pointer;
+}
+
+/* Disabled default option */
+.luxury-form-group select option[disabled] {
+  color: #999;
+}
+
+/* Button */
+.luxury-form-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.open-enquiry{
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+}
+
+.open-enquiry:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.luxury-form-btn:hover {
+  background: #000;
+}
+
+
+/* .animate-left {
+  transform: translateX(-3rem);
+}
+
+.animate-right {
+  transform: translateX(3rem); } */
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }

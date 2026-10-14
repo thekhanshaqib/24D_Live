@@ -1,0 +1,63 @@
+<!-- Declares this document as an HTML5 page. -->
+<!DOCTYPE html>
+<!-- Sets the page language for browsers and assistive technologies. -->
+<html lang="en">
+
+<head>
+  <!-- Sets the character encoding used by the page. -->
+  <meta charset="UTF-8" />
+  <!-- Keeps the layout responsive across desktop and mobile screens. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Sets the title shown in the browser tab and search results. -->
+  <title>Brochures | 24 Dimensions</title>
+  <!-- Provides a short summary of the brochure page for search engines. -->
+  <meta name="description" content="Explore property brochures from 24 Dimensions and discover more about our projects." />
+  <!-- Loads the Raleway font used by the site design. -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Loads the icon font used by shared site components. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Loads the Poppins font used by the site design. -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Loads shared site-wide styles and page layout rules. -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <!-- Loads reusable component styles and brochure-specific styles. -->
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/brochures.css">
+  <!-- Sets the icon displayed in the browser tab. -->
+  <link rel="icon" href="assets/images/Favicon.png" type="image/png">
+</head>
+
+<body>
+  <!-- components.js inserts the shared content header here. -->
+  <div data-component="header-content"></div>
+
+  <!-- Contains the main content presented on the brochures page. -->
+  <main>
+    <!-- Introduces the page with its title and a short description. -->
+    <section class="brochures-hero" aria-labelledby="brochures-title">
+      <div class="brochures-container">
+        <h1 id="brochures-title">Brochures</h1>
+        <p>Explore our property brochures and discover more about our projects.</p>
+      </div>
+    </section>
+
+    <!-- Provides the container that brochures.js fills with brochure items. -->
+    <section class="brochures-section" aria-label="Property brochures">
+      <div class="brochures-container">
+        <div class="brochure-list" id="brochureList"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- components.js inserts the shared site footer here. -->
+  <div data-component="footer"></div>
+
+  <!-- Loads shared component insertion and general site behavior. -->
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Populates the brochure list in the main content section. -->
+  <script src="assets/js/brochures.js"></script>
+</body>
+
+</html>

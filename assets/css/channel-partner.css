@@ -1,0 +1,761 @@
+body{
+  background-color: #f1f0eb;
+}
+/* ===============================
+   ABOUT OVERVIEW SECTION
+================================ */
+/* =====================================
+   CHANNEL PARTNERS FULL BANNER
+===================================== */
+
+.channel-partners-overview-full {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Full hero height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("/assets/images/banners/grow_with_24_dimestion.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CONTENT BOX */
+.channel-partners-content-box {
+    max-width: 900px;
+    width: 100%;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.channel-partners-content-box h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.channel-partners-content-box p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* =====================================
+   MOBILE VERSION
+===================================== */
+
+@media (max-width: 991px) {
+
+    .channel-partners-overview-full {
+        height: 55vh;
+
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+            url("/assets/images/banners/channel-m.webp"); /* mobile version */
+    }
+
+    .channel-partners-content-box {
+        padding: 0 20px; /* remove 10rem hack */
+        margin-top: 50px;
+    }
+
+    .channel-partners-content-box h2 {
+        font-size: clamp(1.8rem, 6vw, 2.2rem);
+    }
+
+    .channel-partners-content-box p {
+        font-size: 1rem;
+    }
+}
+
+
+/* ================= Channel Partner | Why Work ================= */
+
+/* ================= SECTION ================= */
+
+.Channel-partner-why {
+  padding: 80px 0;
+}
+
+.Channel-partner-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= TOP ================= */
+
+.Channel-partner-top {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+/* LEFT */
+.Channel-partner-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.Channel-partner-intro {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 520px;
+  margin-bottom: 1.5rem;
+}
+
+/* RIGHT */
+.Channel-partner-media-wrapper {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.Channel-partner-media-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.Channel-partner-play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background: #df3719;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.Channel-partner-media-caption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= SLIDER ================= */
+
+.channel-partner-slider {
+  position: relative;
+}
+
+/* viewport */
+.Channel-partner-points-wrapper {
+  overflow: hidden;
+}
+
+/* track */
+.Channel-partner-points {
+  display: flex;
+  gap: 48px;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+/* card */
+.Channel-partner-point {
+  flex: 0 0 calc(25% - 36px);
+}
+
+/* 🔴 RED STRIP */
+.Channel-partner-line {
+  display: block;
+  width: 42px;
+  height: 2px;
+  background-color: #df3719;
+  margin-bottom: 14px;
+}
+
+/* text */
+.Channel-partner-point h3 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.Channel-partner-point p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* arrows */
+.channel-partner-arrows {
+  position: absolute;
+  right: 0;
+  top: -56px;
+  display: flex;
+  gap: 12px;
+}
+
+.cp-arrow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+  .Channel-partner-top {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .Channel-partner-point {
+    flex: 0 0 calc(50% - 24px);
+  }
+
+  .Channel-partner-points {
+    gap: 40px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .Channel-partner-why {
+    padding: 60px 0;
+  }
+
+  .Channel-partner-point {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .Channel-partner-line {
+    margin: 0 auto 14px;
+  }
+
+  .channel-partner-arrows {
+    position: static;
+    margin-top: 24px;
+    justify-content: center;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 576px) {
+
+  .Channel-partner-title {
+    font-size: 1.7rem;
+  }
+
+  .Channel-partner-intro {
+    font-size: 15px;
+  }
+
+  .Channel-partner-point h3 {
+    font-size: 16px;
+  }
+
+  .Channel-partner-point p {
+    font-size: 14px;
+  }
+}
+
+/* ================= Channel Partner | Who Can Partner ================= */
+
+
+.Channel-partner-who {
+  padding: 40px 0;
+  
+}
+
+.Channel-partner-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Big Card */
+.Channel-partner-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: linear-gradient(135deg, #fffaf5, #ffffff);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+}
+
+/* Left Content */
+.Channel-partner-card-content {
+  padding: 40px 60px;
+}
+
+.Channel-partner-card-title {
+    font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 2vw, 2.6rem);
+  margin-bottom: 1rem;
+  font-weight: 500;
+
+}
+
+.Channel-partner-card-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 520px;
+  margin-bottom: 28px;
+}
+
+.Channel-partner-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #0f2a44;
+}
+
+/* Partner List */
+.Channel-partner-partner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.Channel-partner-partner-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Font Awesome Icon Wrapper */
+.Channel-partner-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #fff0e8;
+  color: #df3719;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+/* Note */
+.Channel-partner-note {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #666;
+  max-width: 520px;
+}
+
+/* Right Image */
+.Channel-partner-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 1024px) {
+  .Channel-partner-card {
+    grid-template-columns: 1fr;
+  }
+
+  .Channel-partner-card-content {
+    padding: 50px 40px;
+  }
+
+  .Channel-partner-card-image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Channel-partner-card-title {
+    font-size: 1.8rem;
+  }
+
+  .Channel-partner-card-content {
+    padding: 40px 24px;
+  }
+}
+
+/* ================= How It Works ================= */
+
+/* ================= SECTION ================= */
+
+.how-it-works-24d {
+  padding: 80px 0;
+}
+
+.how-it-works-24d-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* ================= TITLE ================= */
+
+.how-it-works-24d-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ================= TIMELINE WRAPPER ================= */
+
+.how-it-works-24d-timeline-wrap {
+  position: relative;
+}
+
+/* Horizontal timeline line (DESKTOP) */
+.how-it-works-24d-line {
+  position: absolute;
+  top: 32px;
+  left: calc(12% + 28px);
+  width: calc(76% - 28px);
+  height: 2px;
+  border-top: 2px dashed #d9d9d9;
+  z-index: 1;
+}
+
+/* ================= STEPS GRID ================= */
+
+.how-it-works-24d-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.how-it-works-24d-step {
+  text-align: center;
+}
+
+/* ================= ICON ================= */
+
+.how-it-works-24d-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e8470c, #d91900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+/* ================= NUMBER ================= */
+
+.how-it-works-24d-number {
+  display: block;
+  font-size: 26px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+/* ================= TEXT ================= */
+
+.how-it-works-24d-step h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.how-it-works-24d-step p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .how-it-works-24d-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+
+  .how-it-works-24d-line {
+    display: none;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .how-it-works-24d {
+    padding: 64px 0;
+  }
+
+  .how-it-works-24d-title {
+    margin-bottom: 1.8rem;
+  }
+
+  .how-it-works-24d-steps {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .how-it-works-24d-step {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .how-it-works-24d-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+
+  .how-it-works-24d-number {
+    font-size: 22px;
+  }
+
+  .how-it-works-24d-step h4 {
+    font-size: 17px;
+  }
+
+  .how-it-works-24d-step p {
+    font-size: 14px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 576px) {
+  .how-it-works-24d {
+    padding: 56px 0;
+  }
+
+  .how-it-works-24d-step {
+    padding: 0 12px;
+  }
+}
+
+.channel-benefits-24d {
+  padding: 60px 0;
+ 
+}
+
+.channel-benefits-24d .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 1vw, 2.8rem);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+
+  text-align: center;
+}
+
+.accordion-24d {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 3rem;
+}
+
+.accordion-item-24d {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-header-24d {
+  font-family: var(--font-heading);
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 26px 0;
+  font-size: 22px;
+  font-weight: 400;
+  color: #080808;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+}
+
+.accordion-header-24d .icon {
+  font-size: 28px;
+  margin-left: auto;
+  color: #e01212;
+}
+
+
+.accordion-content-24d {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.accordion-content-24d p {
+  padding-bottom: 28px;
+  max-width: 850px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* Active state */
+.accordion-item-24d.active .accordion-content-24d {
+  max-height: 300px;
+}
+
+.accordion-item-24d.active .icon {
+  content: "−";
+}
+
+@media (max-width: 768px) {
+  .accordion-header-24d {
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: start;
+  }
+
+  .section-title{
+    text-align: left;
+  }
+  .section-subtitle{
+    text-align: left;
+  }
+  .accordion-header-24d i {
+    font-size: 18px;
+  }
+
+  .accordion-header-24d .icon {
+    font-size: 24px;
+  }
+
+  .accordion-content-24d p {
+    font-size: 15px;
+  }
+}
+
+.partner-registration-24d {
+  padding: 80px 0;
+
+}
+
+.partner-registration-24d .container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.registration-form-24d {
+  margin-top: 50px;
+}
+
+.form-grid-24d {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.form-group-24d input,
+.form-group-24d textarea {
+  width: 100%;
+  padding: 16px 18px;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  transition: border-color 0.25s ease;
+}
+
+.form-group-24d textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-group-24d input:focus,
+.form-group-24d textarea:focus {
+  outline: none;
+  border-color: #0b2c3d;
+}
+
+.form-group-24d.full-width {
+  grid-column: span 2;
+}
+
+.form-consent-24d {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.form-consent-24d label {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.form-consent-24d input {
+  margin-top: 4px;
+}
+
+.form-submit-24d {
+  margin-top: 30px;
+  padding: 14px 38px;
+  font-size: 15px;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: #fff;
+  background: #0b2c3d;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.form-submit-24d:hover {
+  background: #08304a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-grid-24d {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group-24d.full-width {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,27 @@
+[27-Feb-2026 08:25:42 UTC] CRM API Response Code: 200
+[27-Feb-2026 08:25:42 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 08:39:49 UTC] CRM API Response Code: 200
+[27-Feb-2026 08:39:49 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 08:43:02 UTC] CRM API Response Code: 200
+[27-Feb-2026 08:43:02 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 08:47:31 UTC] CRM API Response Code: 200
+[27-Feb-2026 08:47:31 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 08:48:56 UTC] CRM API Response Code: 200
+[27-Feb-2026 08:48:56 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 08:56:18 UTC] CRM API Response Code: 200
+[27-Feb-2026 08:56:18 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 08:57:46 UTC] CRM API Response Code: 200
+[27-Feb-2026 08:57:46 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 09:02:47 UTC] CRM payload: {"rep_id":"Info@24dimensions.com","channel_id":"Website_Mandate_form","subject":"Lead from Dimensionwebsite","f_name":"Lead Three","l_name":"","email":"leadthree@gmail.com","phonefax":"7275707103","notes":"Inquiry from website","project":"Residential","alert_client":0,"alert_rep":0}
+[27-Feb-2026 09:02:48 UTC] CRM API Response Code: 200
+[27-Feb-2026 09:02:48 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 09:15:09 UTC] CRM API Response Code: 200
+[27-Feb-2026 09:15:09 UTC] CRM API Response: Disallowed Key Characters.
+[27-Feb-2026 10:22:39 UTC] PHP Warning:  Undefined variable $propertyType in /home/m8w6emtng5kk/public_html/api/submit-enquiry.php on line 41
+[27-Feb-2026 10:36:43 UTC] PHP Warning:  Undefined variable $propertyType in /home/m8w6emtng5kk/public_html/api/submit-enquiry.php on line 41
+[27-Feb-2026 10:49:03 UTC] PHP Warning:  Undefined variable $propertyType in /home/m8w6emtng5kk/public_html/api/submit-enquiry.php on line 41
+[27-Feb-2026 10:49:43 UTC] PHP Warning:  Undefined variable $propertyType in /home/m8w6emtng5kk/public_html/api/submit-enquiry.php on line 41
+[27-Feb-2026 10:50:31 UTC] PHP Warning:  Undefined variable $propertyType in /home/m8w6emtng5kk/public_html/api/submit-enquiry.php on line 41
+[27-Feb-2026 10:51:28 UTC] PHP Warning:  Undefined variable $propertyType in /home/m8w6emtng5kk/public_html/api/submit-enquiry.php on line 41
+[01-Mar-2026 09:00:21 UTC] PHP Warning:  Undefined variable $propertyType in /home/m8w6emtng5kk/public_html/api/submit-enquiry.php on line 41
+[10-Mar-2026 02:26:46 UTC] PHP Warning:  Undefined variable $propertyType in /home/m8w6emtng5kk/public_html/api/submit-enquiry.php on line 41
